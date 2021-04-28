@@ -1,0 +1,24 @@
+@mixin font($font_name, $file_name, $weight, $style) 
+  @font-face 
+    font-family: $font_name
+    font-display: swap
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2")
+    font-weight: #{$weight}
+    font-style: #{$style}
+
+@import 'plugins/normalize'
+@import 'plugins/jquery-ui'
+@import 'plugins/fancybox'
+@import 'fonts'
+@import 'interface'
+@import 'base'
+@import 'blocks/header'
+@import 'blocks/works'
+@import 'blocks/services'
+@import 'blocks/connection'
+@import 'blocks/about'
+@import 'blocks/gallery'
+@import 'blocks/popup'
+@import 'blocks/price'
+@import 'blocks/footer'
+@import 'blocks/adaptive'

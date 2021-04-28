@@ -1,0 +1,62 @@
+.works
+  background: url(../images/works/bg.png) no-repeat 
+  background-size: cover 
+  background-position: top
+  position: relative
+  &__inner 
+    padding-top: 60px 
+    padding-bottom: 60px 
+  &__title
+    display: grid 
+    grid-template-columns: 1fr max-content 1fr 
+    align-items: end 
+  &__title-line
+    width: 200px 
+    height: 3px 
+    background: #FF7A00
+    &:last-of-type
+      justify-self: end 
+  &__title-text
+    text-transform: uppercase
+    font-size: 30px 
+    line-height: 37px 
+  &__wrap
+    margin-top: 55px 
+    display: grid 
+    grid-template-columns: repeat(2, 1fr)
+    justify-content: space-between
+    grid-column-gap: 20px 
+    counter-reset: number 
+    padding: 0 100px 
+  &__item
+    position: relative
+    padding-left: 100px
+    margin-bottom: 100px
+    letter-spacing: 0.05em 
+    line-height: 22px 
+    max-width: 475px
+    align-self: baseline
+    &:nth-child(2)
+      grid-column: 1/2
+      grid-row: 2/3
+    &:last-of-type
+      margin-bottom: 0
+      grid-column: 1/3
+      margin: auto 
+    &:nth-child(n+10)::after 
+      content: counter(number)
+    &::after
+      content: '0' counter(number)
+      counter-increment: number
+      position: absolute
+      font-size: 60px
+      line-height: 73px 
+      letter-spacing: 0.05em 
+      color: rgba(255, 122, 0, 0.5)
+      left: 0
+      top: 50%
+      transform: translateY(-50%) 
+.overlay
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.85)

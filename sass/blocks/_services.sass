@@ -1,0 +1,148 @@
+.services
+  padding-top: 70px
+  padding-bottom: 110px
+  &__title
+    text-align: center
+    text-transform: uppercase
+    font-size: 30px 
+    line-height: 37px 
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      bottom: -20px
+      left: 50%
+      transform: translateX(-50%)
+      width: 300px 
+      height: 3px 
+      background: #FF7A00
+  &__wrap
+    margin-top: 85px 
+    display: grid 
+    grid-template-columns: repeat(2, max-content)
+    justify-content: center
+    grid-column-gap: 20px 
+    align-items: stretch
+  &__nav-item
+    border: 2px solid #F17D11
+    margin-bottom: 15px 
+    width: 386px 
+    height: 177px 
+    position: relative
+    display: grid 
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    &::after 
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: calc(100% - 6px)
+      height: calc(100% - 6px)
+      z-index: 0
+      transition: .3s linear 
+    &:last-of-type
+      margin-bottom: 0
+    &_1
+      background: url(../images/services/nav_1.png) no-repeat 
+      background-size: cover 
+      background-position: center
+      &::before
+        content: ''
+        position: absolute
+        bottom: 10px
+        left: 10px 
+        width: 22.01px 
+        height: 22.01px 
+        background: url(../images/services/nav_1.svg) no-repeat 
+        z-index: 1
+    &_2
+      background: url(../images/services/nav_2.png) no-repeat 
+      background-size: cover 
+      background-position: center
+      &::before
+        content: ''
+        position: absolute
+        bottom: 10px
+        left: 10px 
+        width: 22.01px 
+        height: 23px 
+        background: url(../images/services/nav_2.svg) no-repeat
+        z-index: 1
+    &_3
+      background: url(../images/services/nav_3.png) no-repeat 
+      background-size: cover 
+      background-position: center
+      &::before
+        content: ''
+        position: absolute
+        bottom: 10px
+        left: 10px 
+        width: 22.74px 
+        height: 35.21px 
+        background: url(../images/services/nav_3.svg) no-repeat 
+        z-index: 1
+    &_4
+      background: url(../images/services/nav_3.png) no-repeat 
+      background-size: cover 
+      background-position: center
+      &::before
+        content: ''
+        position: absolute
+        bottom: 10px
+        left: 10px 
+        width: 22.05px 
+        height: 33.08px 
+        background: url(../images/services/nav_4.svg) no-repeat 
+        z-index: 1
+  &__nav-title
+    text-align: center
+    font-size: 22px 
+    line-height: 27px 
+    letter-spacing: 0.05em 
+    max-width: 185px 
+    z-index: 1
+  &__content
+    width: 590px 
+  &__content-item
+    border: 2px solid #F17D11
+    background: url(../images/services/1.png) no-repeat 
+    background-size: cover 
+    background-position: center
+    padding: 45px 50px 10px 50px  
+    height: 100%
+  &__content-title
+    text-align: center
+    font-size: 24px 
+    line-height: 29px
+    letter-spacing: 0.05em 
+    color: #F17D11 
+  &__second-list
+    margin-top: 50px 
+  &__second-item
+    letter-spacing: 0.05em 
+    margin-bottom: 15px 
+    &:last-of-type
+      margin-bottom: 0
+  &__info 
+    margin-top: 75px 
+  &__info-text
+    font-size: 22px 
+    line-height: 27px 
+    letter-spacing: .05em
+    text-align: justify
+  &__info-title 
+    margin-top: 50px 
+    color: #FF7A00
+    text-align: center
+    font-size: 30px 
+    line-height: 37px 
+    -webkit-text-stroke: 1px #FF7A00
+  & .mixitup-control-active .services__nav-title
+    color: #FF7C00
+    +semi 
+  & .mixitup-control-active::after 
+    background: rgba(#0A0A0A,.8)
+

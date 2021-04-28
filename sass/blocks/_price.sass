@@ -1,0 +1,149 @@
+.price
+  padding-top: 140px 
+  &__title
+    text-align: center
+    text-transform: uppercase
+    font-size: 30px 
+    line-height: 37px 
+  &__content
+    margin-top: 70px 
+  &__nameWorks
+    border-top: 1px solid #fff
+    border-right: 1px solid #fff
+  &__nameWorks-title
+    padding-left: 65px 
+  &__nameWorks-item
+    padding-left: 45px 
+  &__measure
+    border-top: 1px solid #fff
+    border-right: 1px solid #fff
+    border-bottom: 1px solid #fff
+  &__measure-title
+    padding-left: 24px 
+    padding-right: 24px
+  &__measure-list
+    text-align: center 
+  &__value
+    border-top: 1px solid #fff
+    border-bottom: 1px solid #fff
+  &__value-title 
+    padding-left: 33px 
+    padding-right: 33px
+  &__value-list 
+    text-align: center 
+  &__download
+    display: grid 
+    justify-content: end 
+    max-width: 995px 
+    margin: 40px auto 0  
+  &__btn 
+    padding: 10px 6px 10px 7px  
+    &:hover 
+      background: #1C1D1E
+
+.price-block
+  &__title
+    border-bottom: 1px solid #fff
+    +bold 
+    font-size: 16px 
+    line-height: 20px 
+    letter-spacing: .05em 
+    padding-top: 17px 
+    padding-bottom: 17px 
+  &__item
+    border-bottom: 1px solid #fff
+    padding-top: 7px 
+    padding-bottom: 5px 
+    font-size: 14px 
+    line-height: 17px 
+    letter-spacing: .05em 
+    white-space: nowrap
+
+
+
+//jqueru-ui
+//navigation
+.ui-corner-all
+  border-radius: 0
+.ui-widget.ui-widget-content
+  border: none 
+  max-width: 995px 
+  margin: 70px auto 0
+.ui-widget-content
+  color: #fff
+  +med 
+.ui-tabs 
+  padding: 0 
+.ui-widget-header
+  border: none 
+  color: #fff
+  +semi 
+.ui-tabs .ui-tabs-nav
+  display: flex 
+  justify-content: space-between
+  align-items: center
+  background: #313131
+  padding: 0
+.ui-tabs .ui-tabs-nav li
+  margin: 0
+  width: 100%
+  display: grid 
+  justify-content: stretch
+  text-align: center
+  border-top: 6px solid #313131
+  border-right: 3px solid #313131
+  border-left: 3px solid #313131
+  &:first-of-type
+    border-left: 6px solid #313131
+  &:last-of-type
+    border-right: 6px solid #313131
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor
+  padding: 0
+  padding-top: 10px
+  padding-bottom: 15px  
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+  padding: 0
+  +semi
+  font-size: 20px 
+  line-height: 24px 
+  letter-spacing: normal
+  border-top-color: #F17D11
+  border-left: 6px solid #F17D11
+  border-right: 6px solid #F17D11
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: -5px
+    width: 100%
+    height: 6px
+    background: #3d3d3d
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+  border: none 
+  background: #3d3d3d
+  color: #fff
+  +med 
+  font-weight: 500
+  letter-spacing: .05em 
+  font-size: 20px 
+  line-height: 24px 
+.ui-corner-top
+  border-radius: 0 
+.ui-button, .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button
+  color: #fff
+
+//content
+.ui-tabs .ui-tabs-panel
+  padding: 0
+  padding-top: 25px
+  padding-bottom: 30px 
+  background: #3d3d3d
+  display: grid 
+  grid-template-columns: 1fr max-content max-content
+  justify-content: space-between
+  border: 6px solid #F17D11
+.ui-corner-all, .ui-corner-bottom, .ui-corner-br, .ui-corner-right
+  border-radius: 0
+.ui-widget-content
+  border: none 

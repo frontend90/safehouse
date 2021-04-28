@@ -1,0 +1,67 @@
+.about
+  margin-top: 130px 
+  background: url(../images/about/bg.png) no-repeat 
+  background-size: cover 
+  background-position: center
+  &__overlay 
+    background: rgba(#000,.85)
+  &__wrap
+    padding-top: 35px 
+    padding-bottom: 90px 
+    display: grid
+    grid-template-columns: max-content 320px
+    align-items: center
+    justify-content: space-between
+  &__content-title
+    text-transform: uppercase
+    text-align: center
+    font-size: 70px 
+    line-height: 85px 
+    color: #FF7A00
+    letter-spacing: .05em 
+  &__content-list
+    margin-top: 50px 
+  &__content-item
+    +med 
+    font-size: 20px 
+    line-height: 24px 
+    letter-spacing: .05em 
+    margin-bottom: 20px 
+    position: relative
+    padding-bottom: 15px 
+    &::after
+      content: ''
+      position: absolute
+      left: 0 
+      bottom: 0
+      border-bottom: 2px solid #FF7D05
+      width: 490px
+    &:last-of-type
+      margin-bottom: 0
+  &__slider
+    max-width: 320px 
+    & .slick-list 
+      overflow: hidden
+      & .slick-track 
+        display: flex 
+  &__slider-block
+    border: 3px solid #FF7A00
+    border-radius: 50%
+    padding: 55px 0 
+    max-width: 320px 
+    display: flex 
+    flex-direction: column
+    align-items: center
+    justify-content: center
+  &__slider-text
+    font-size: 18px 
+    line-height: 22px 
+    letter-spacing: .05em 
+    &_big
+      +bold 
+      font-size: 100px 
+      line-height: 100px 
+      letter-spacing: .05em 
+      color: #FF7A00
+      margin: 30px 0 
+
